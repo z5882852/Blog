@@ -1,8 +1,25 @@
 ---
-title: Python数据可视化例题
+title: Python数据可视化源码
 date: 2023-06-05 18:58:00
 tags: [Python,数据可视化,源码]
 ---
+## 简单示例
+```Python
+import matplotlib.pyplot as plt
+
+plt.title("title")  # 标题的名称
+
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+plt.plot(x,y)  # 绘制图像
+
+#plt.savefig('plt_example.png') # 保存图片
+
+plt.show() # 显示图像
+
+```
+## 应用样式
 ```Python
 import matplotlib.pyplot as plt
 

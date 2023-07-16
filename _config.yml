@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 怪诞不经
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+description: 'z5882852的个人博客'
+keywords: [Python,Java,Hadoop,博客]
+author: z5882852
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://z5882852.github.io
-permalink: :year/:month/:day/:title/
+url: http://z5882852.github.io/Blog
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
