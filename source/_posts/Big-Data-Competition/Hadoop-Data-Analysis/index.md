@@ -100,5 +100,5 @@ hive> create table goods1 as # goods1 为创建的新表名称
 ```
 
 ### 一些问题
-![图片无法加载](src/01.png "图片")
+![图片无法加载](/Blog/src/01.png "图片")
 其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null
