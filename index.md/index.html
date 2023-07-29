@@ -79,6 +79,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Machine-Learning/Machine-Learning" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/Blog/Machine-Learning/Machine-Learning/" class="article-date">
+  <time class="dt-published" datetime="2023-07-17T17:02:47.000Z" itemprop="datePublished">2023-07-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/Blog/Machine-Learning/Machine-Learning/">使用卷积神经网络模型来识别验证码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当使用Python爬虫爬取数据或者脚本登录时可能会遇到人机验证，常见的有图片验证码、滑动拼图验证、文字点选验证、空间推理验证等，为了通过这些验证我们可以使用模型来识别这些验证图片的特征。</p>
+<p><strong>以下是使用<code>Python</code> <code>TensorFlow</code>构建和训练卷积神经网络(CNN)模型的示例</strong></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="一、安装TensorFlow库"><a href="#一、安装TensorFlow库" class="headerlink" title="一、安装TensorFlow库"></a>一、安装TensorFlow库</h3><blockquote>
+<p>请阅读<a target="_blank" rel="noopener" href="https://tensorflow.google.cn/install/pip?hl=zh-cn">tensorflow官网</a></p>
+</blockquote>
+<h4 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h4><ul>
+<li>Python 3.6–3.9<ul>
+<li>若要支持 Python 3.9，需要使用 TensorFlow 2.5 或更高版本。</li>
+<li>若要支持 Python 3.8，需要使用 TensorFlow 2.2 或更高版本。</li>
+</ul>
+</li>
+<li>pip 19.0 或更高版本(需要 manylinux2010 支持)</li>
+<li>Ubuntu 16.04 或更高版本(64 位)</li>
+<li>macOS 10.12.6 (Sierra) 或更高版本(64 位)(不支持 GPU)</li>
+<li>macOS 要求使用 pip 20.3 或更高版本</li>
+<li>Windows 7 或更高版本(64 位)<ul>
+<li><a target="_blank" rel="noopener" href="https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads">适用于 Visual Studio 2015、2017 和 2019 的 Microsoft Visual C++ 可再发行软件包</a></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://tensorflow.google.cn/install/gpu?hl=zh-cn">GPU 支持</a>需要使用支持 CUDA® 的卡(适用于 Ubuntu 和 Windows)</li>
+</ul>
+<p>这里我使用的系统是<code>Windows11-64位</code>，并且使用CPU训练模型，所以不需要安装CUDA</p>
+<h4 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h4><p>在项目根目录下创建一个<code>.\venv</code>目录的虚拟环境</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python <span class="literal">-m</span> venv <span class="literal">--system-site-packages</span> .\venv</span><br></pre></td></tr></table></figure>
+<p>激活虚拟环境</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\venv\Scripts\activate</span><br></pre></td></tr></table></figure>
+<p>升级pip</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install <span class="literal">--upgrade</span> pip</span><br></pre></td></tr></table></figure>
+<h4 id="安装-TensorFlow-pip-软件包"><a href="#安装-TensorFlow-pip-软件包" class="headerlink" title="安装 TensorFlow pip 软件包"></a>安装 TensorFlow pip 软件包</h4><p>未完待续…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://z5882852.github.io/Blog/Machine-Learning/Machine-Learning/" data-id="clko13mcc000134fl296bd6xg" data-title="使用卷积神经网络模型来识别验证码" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="tag">卷积神经网络</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/" rel="tag">验证码</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Big-Data-Competition/Big-Data-Competition" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/Blog/Big-Data-Competition/Big-Data-Competition/" class="article-date">
@@ -102,16 +171,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><ul>
-<li><h5 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a><a href="/Big-Data-Competition/Python-Data-Visualization/index/">Python数据分析</a></h5></li>
-<li><h5 id="Python数据可视化"><a href="#Python数据可视化" class="headerlink" title="Python数据可视化"></a><a href="/Big-Data-Competition/Python-Data-Analysis/index/">Python数据可视化</a></h5></li>
-<li><h5 id="Hadoop数据分析"><a href="#Hadoop数据分析" class="headerlink" title="Hadoop数据分析"></a><a href="/Big-Data-Competition/Hadoop-Data-Analysis/index/">Hadoop数据分析</a></h5></li>
-<li><h5 id="网络数据采集-爬虫"><a href="#网络数据采集-爬虫" class="headerlink" title="网络数据采集(爬虫)"></a><a href="/Big-Data-Competition/Hadoop-Data-Analysis/index/">网络数据采集(爬虫)</a></h5></li>
+<li><h5 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/index/">Python数据分析</a></h5></li>
+<li><h5 id="Python数据可视化"><a href="#Python数据可视化" class="headerlink" title="Python数据可视化"></a><a href="/blog/Big-Data-Competition/Python-Data-Analysis/index/">Python数据可视化</a></h5></li>
+<li><h5 id="Hadoop数据分析"><a href="#Hadoop数据分析" class="headerlink" title="Hadoop数据分析"></a><a href="/blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">Hadoop数据分析</a></h5></li>
+<li><h5 id="网络数据采集-爬虫"><a href="#网络数据采集-爬虫" class="headerlink" title="网络数据采集(爬虫)"></a><a href="/blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">网络数据采集(爬虫)</a></h5></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Big-Data-Competition/" data-id="clk5taj0c00047cflgku91tfu" data-title="大数据比赛" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Big-Data-Competition/" data-id="clko13mcf000234fl2t9l4mcg" data-title="大数据比赛" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -171,12 +240,12 @@
 <p>以下是将查询结果保存到表的语句。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">hive&gt; insert overwrite table goods1  <span class="comment"># goods1 为表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span> </span><br><span class="line">    &gt;   and title is not null;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下是直接创建新表的语句</span></span><br><span class="line">hive&gt; create table goods1 as <span class="comment"># goods1 为创建的新表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span></span><br><span class="line">    &gt;   and title is not null;</span><br></pre></td></tr></table></figure>
 
-<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
+<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clk5taj0800017cfl6xsjd2yc" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clko13mch000434fl05b55c32" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -251,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Network-Data-Collection/index/" data-id="clk5taj0j000y7cfl07iy5xg7" data-title="网络数据采集" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Network-Data-Collection/index/" data-id="clko13mci000534fl22i32gui" data-title="网络数据采集" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -345,7 +414,7 @@
 <p>一个简单例子:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">plt.title(<span class="string">&quot;title&quot;</span>)  <span class="comment"># 标题的名称</span></span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(x,y)  <span class="comment"># 绘制图像</span></span><br><span class="line"></span><br><span class="line">plt.savefig(<span class="string">&#x27;plt_example.png&#x27;</span>) <span class="comment"># 保存图片</span></span><br><span class="line"></span><br><span class="line">plt.show() <span class="comment"># 显示图像</span></span><br></pre></td></tr></table></figure>
 <p>这是输出的图片</p>
-<p><img src="/Blog/src/plt_example.png" alt="图片无法加载" title="图片"></p>
+<p><img src="/Blog/blog/src/plt_example.png" alt="图片无法加载" title="图片"></p>
 <h3 id="Requests"><a href="#Requests" class="headerlink" title="Requests"></a>Requests</h3><p>引用模块</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br></pre></td></tr></table></figure>
 <p>示例</p>
@@ -364,7 +433,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Analysis/index/" data-id="clk5taj0k000z7cfl5rcsgyyg" data-title="Python数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Analysis/index/" data-id="clko13mcl000b34fldqzeauaw" data-title="Python数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -401,11 +470,11 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>数据可视化是在整个数据分析非常重要的一个辅助工具,可以清晰的理解数据，从而调整我们的分析方法。</p>
-<h3 id="以下是实训的一份例题"><a href="#以下是实训的一份例题" class="headerlink" title="以下是实训的一份例题:"></a>以下是实训的一份例题:</h3><h3 id="例题题目"><a href="#例题题目" class="headerlink" title="例题题目"></a><a href="/Big-Data-Competition/Python-Data-Visualization/example/">例题题目</a></h3><h3 id="例题源码"><a href="#例题源码" class="headerlink" title="例题源码"></a><a href="/Big-Data-Competition/Python-Data-Visualization/example_code/">例题源码</a></h3>
+<h3 id="以下是实训的一份例题"><a href="#以下是实训的一份例题" class="headerlink" title="以下是实训的一份例题:"></a>以下是实训的一份例题:</h3><h3 id="例题题目"><a href="#例题题目" class="headerlink" title="例题题目"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/example/">例题题目</a></h3><h3 id="例题源码"><a href="#例题源码" class="headerlink" title="例题源码"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/example_code/">例题源码</a></h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/index/" data-id="clk5taj0e00067cfl7qrpavpe" data-title="Python数据可视化" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/index/" data-id="clko13mck000834flao90g68f" data-title="Python数据可视化" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -471,7 +540,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example/" data-id="clk5taj0a00027cfl45qm97md" data-title="Python数据可视化例题" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example/" data-id="clko13mcj000634flf9ab1xvd" data-title="Python数据可视化例题" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -512,7 +581,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example_code/" data-id="clk5taj0d00057cfldfcf4zqc" data-title="Python数据可视化源码" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example_code/" data-id="clko13mck000934flaqvfdi6k" data-title="Python数据可视化源码" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -539,7 +608,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/Hadoop/" rel="tag">Hadoop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" rel="tag">数据分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" rel="tag">数据可视化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/" rel="tag">数据采集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%AF%94%E8%B5%9B/" rel="tag">比赛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%BA%90%E7%A0%81/" rel="tag">源码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E9%A2%98%E7%9B%AE/" rel="tag">题目</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/Hadoop/" rel="tag">Hadoop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="tag">卷积神经网络</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" rel="tag">数据分析</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" rel="tag">数据可视化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/" rel="tag">数据采集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%AF%94%E8%B5%9B/" rel="tag">比赛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E6%BA%90%E7%A0%81/" rel="tag">源码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E9%A2%98%E7%9B%AE/" rel="tag">题目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Blog/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/" rel="tag">验证码</a></li></ul>
     </div>
   </div>
 
@@ -549,7 +618,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/Blog/tags/Hadoop/" style="font-size: 13.33px;">Hadoop</a> <a href="/Blog/tags/Python/" style="font-size: 20px;">Python</a> <a href="/Blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 13.33px;">数据分析</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 16.67px;">数据可视化</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/" style="font-size: 10px;">数据采集</a> <a href="/Blog/tags/%E6%AF%94%E8%B5%9B/" style="font-size: 10px;">比赛</a> <a href="/Blog/tags/%E6%BA%90%E7%A0%81/" style="font-size: 10px;">源码</a> <a href="/Blog/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/Blog/tags/%E9%A2%98%E7%9B%AE/" style="font-size: 10px;">题目</a>
+      <a href="/Blog/tags/Hadoop/" style="font-size: 13.33px;">Hadoop</a> <a href="/Blog/tags/Python/" style="font-size: 20px;">Python</a> <a href="/Blog/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">卷积神经网络</a> <a href="/Blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 10px;">大数据</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 13.33px;">数据分析</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 16.67px;">数据可视化</a> <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/" style="font-size: 10px;">数据采集</a> <a href="/Blog/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">机器学习</a> <a href="/Blog/tags/%E6%AF%94%E8%B5%9B/" style="font-size: 10px;">比赛</a> <a href="/Blog/tags/%E6%BA%90%E7%A0%81/" style="font-size: 10px;">源码</a> <a href="/Blog/tags/%E7%88%AC%E8%99%AB/" style="font-size: 13.33px;">爬虫</a> <a href="/Blog/tags/%E9%A2%98%E7%9B%AE/" style="font-size: 10px;">题目</a> <a href="/Blog/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/" style="font-size: 10px;">验证码</a>
     </div>
   </div>
 
@@ -558,7 +627,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2023/06/">六月 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2023/07/">七月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2023/06/">六月 2023</a></li></ul>
     </div>
   </div>
 
@@ -569,6 +638,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/Blog/Machine-Learning/Machine-Learning/">使用卷积神经网络模型来识别验证码</a>
+          </li>
         
           <li>
             <a href="/Blog/Big-Data-Competition/Big-Data-Competition/">大数据比赛</a>
@@ -584,10 +657,6 @@
         
           <li>
             <a href="/Blog/Big-Data-Competition/Python-Data-Analysis/index/">Python数据分析</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/Big-Data-Competition/Python-Data-Visualization/index/">Python数据可视化</a>
           </li>
         
       </ul>
