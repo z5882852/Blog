@@ -13,14 +13,14 @@
 <meta property="og:site_name" content="怪诞不经">
 <meta property="og:description" content="MySQL1234systemctl start mysqld.service # 启动mysql服务systemctl stop mysqld.service # 停止mysql服务systemctl restart mysqld.service # 重启mysql服务systemctl status mysqld.service # 查看mysql服务状态  Hadoop123456789st">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://z5882852.github.io/Blog/blog/src/01.png">
+<meta property="og:image" content="http://z5882852.github.io/Blog/Blog/src/01.png">
 <meta property="article:published_time" content="2023-06-06T12:39:00.000Z">
-<meta property="article:modified_time" content="2023-07-29T13:03:24.002Z">
+<meta property="article:modified_time" content="2023-07-29T13:10:21.843Z">
 <meta property="article:author" content="z5882852">
 <meta property="article:tag" content="Hadoop">
 <meta property="article:tag" content="数据分析">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://z5882852.github.io/Blog/blog/src/01.png">
+<meta name="twitter:image" content="http://z5882852.github.io/Blog/Blog/src/01.png">
   
     <link rel="alternate" href="/Blog/atom.xml" title="怪诞不经" type="application/atom+xml">
   
@@ -125,12 +125,12 @@
 <p>以下是将查询结果保存到表的语句。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">hive&gt; insert overwrite table goods1  <span class="comment"># goods1 为表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span> </span><br><span class="line">    &gt;   and title is not null;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下是直接创建新表的语句</span></span><br><span class="line">hive&gt; create table goods1 as <span class="comment"># goods1 为创建的新表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span></span><br><span class="line">    &gt;   and title is not null;</span><br></pre></td></tr></table></figure>
 
-<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
+<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/Blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clko13mch000434fl05b55c32" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clko1a7kh0004i8fl0zt92aaa" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       

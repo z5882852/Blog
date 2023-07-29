@@ -134,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Machine-Learning/Machine-Learning/" data-id="clko13mcc000134fl296bd6xg" data-title="使用卷积神经网络模型来识别验证码" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Machine-Learning/Machine-Learning/" data-id="clko1a7kc0002i8flbsfrdp6o" data-title="使用卷积神经网络模型来识别验证码" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -171,16 +171,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><ul>
-<li><h5 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/index/">Python数据分析</a></h5></li>
-<li><h5 id="Python数据可视化"><a href="#Python数据可视化" class="headerlink" title="Python数据可视化"></a><a href="/blog/Big-Data-Competition/Python-Data-Analysis/index/">Python数据可视化</a></h5></li>
-<li><h5 id="Hadoop数据分析"><a href="#Hadoop数据分析" class="headerlink" title="Hadoop数据分析"></a><a href="/blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">Hadoop数据分析</a></h5></li>
-<li><h5 id="网络数据采集-爬虫"><a href="#网络数据采集-爬虫" class="headerlink" title="网络数据采集(爬虫)"></a><a href="/blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">网络数据采集(爬虫)</a></h5></li>
+<li><h5 id="Python数据分析"><a href="#Python数据分析" class="headerlink" title="Python数据分析"></a><a href="/Blog/Big-Data-Competition/Python-Data-Visualization/index/">Python数据分析</a></h5></li>
+<li><h5 id="Python数据可视化"><a href="#Python数据可视化" class="headerlink" title="Python数据可视化"></a><a href="/Blog/Big-Data-Competition/Python-Data-Analysis/index/">Python数据可视化</a></h5></li>
+<li><h5 id="Hadoop数据分析"><a href="#Hadoop数据分析" class="headerlink" title="Hadoop数据分析"></a><a href="/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">Hadoop数据分析</a></h5></li>
+<li><h5 id="网络数据采集-爬虫"><a href="#网络数据采集-爬虫" class="headerlink" title="网络数据采集(爬虫)"></a><a href="/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/">网络数据采集(爬虫)</a></h5></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Big-Data-Competition/" data-id="clko13mcf000234fl2t9l4mcg" data-title="大数据比赛" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Big-Data-Competition/" data-id="clko1a7ka0001i8flbtd925zc" data-title="大数据比赛" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -240,12 +240,12 @@
 <p>以下是将查询结果保存到表的语句。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">hive&gt; insert overwrite table goods1  <span class="comment"># goods1 为表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span> </span><br><span class="line">    &gt;   and title is not null;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下是直接创建新表的语句</span></span><br><span class="line">hive&gt; create table goods1 as <span class="comment"># goods1 为创建的新表名称</span></span><br><span class="line">    &gt; <span class="keyword">select</span> * </span><br><span class="line">    &gt; from goods </span><br><span class="line">    &gt; <span class="built_in">where</span> title not like <span class="string">&quot;%连衣裙%&quot;</span> </span><br><span class="line">    &gt;   and title not like <span class="string">&quot;%女士%&quot;</span></span><br><span class="line">    &gt;   and title is not null;</span><br></pre></td></tr></table></figure>
 
-<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
+<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p><img src="/Blog/Blog/src/01.png" alt="图片无法加载" title="图片"><br>其中第4题的空值null数据是值上一题的价格(price)为空值(null)而不是标题(title)为null</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clko13mch000434fl05b55c32" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Hadoop-Data-Analysis/index/" data-id="clko1a7kh0004i8fl0zt92aaa" data-title="Hadoop数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -320,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Network-Data-Collection/index/" data-id="clko13mci000534fl22i32gui" data-title="网络数据采集" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Network-Data-Collection/index/" data-id="clko1a7kk0005i8fl4qwtgff5" data-title="网络数据采集" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -414,7 +414,7 @@
 <p>一个简单例子:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">plt.title(<span class="string">&quot;title&quot;</span>)  <span class="comment"># 标题的名称</span></span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(x,y)  <span class="comment"># 绘制图像</span></span><br><span class="line"></span><br><span class="line">plt.savefig(<span class="string">&#x27;plt_example.png&#x27;</span>) <span class="comment"># 保存图片</span></span><br><span class="line"></span><br><span class="line">plt.show() <span class="comment"># 显示图像</span></span><br></pre></td></tr></table></figure>
 <p>这是输出的图片</p>
-<p><img src="/Blog/blog/src/plt_example.png" alt="图片无法加载" title="图片"></p>
+<p><img src="/Blog/Blog/src/plt_example.png" alt="图片无法加载" title="图片"></p>
 <h3 id="Requests"><a href="#Requests" class="headerlink" title="Requests"></a>Requests</h3><p>引用模块</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br></pre></td></tr></table></figure>
 <p>示例</p>
@@ -433,7 +433,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Analysis/index/" data-id="clko13mcl000b34fldqzeauaw" data-title="Python数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Analysis/index/" data-id="clko1a7kx001ci8flf9y53ob8" data-title="Python数据分析" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -470,11 +470,11 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>数据可视化是在整个数据分析非常重要的一个辅助工具,可以清晰的理解数据，从而调整我们的分析方法。</p>
-<h3 id="以下是实训的一份例题"><a href="#以下是实训的一份例题" class="headerlink" title="以下是实训的一份例题:"></a>以下是实训的一份例题:</h3><h3 id="例题题目"><a href="#例题题目" class="headerlink" title="例题题目"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/example/">例题题目</a></h3><h3 id="例题源码"><a href="#例题源码" class="headerlink" title="例题源码"></a><a href="/blog/Big-Data-Competition/Python-Data-Visualization/example_code/">例题源码</a></h3>
+<h3 id="以下是实训的一份例题"><a href="#以下是实训的一份例题" class="headerlink" title="以下是实训的一份例题:"></a>以下是实训的一份例题:</h3><h3 id="例题题目"><a href="#例题题目" class="headerlink" title="例题题目"></a><a href="/Blog/Big-Data-Competition/Python-Data-Visualization/example/">例题题目</a></h3><h3 id="例题源码"><a href="#例题源码" class="headerlink" title="例题源码"></a><a href="/Blog/Big-Data-Competition/Python-Data-Visualization/example_code/">例题源码</a></h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/index/" data-id="clko13mck000834flao90g68f" data-title="Python数据可视化" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/index/" data-id="clko1a7kx001bi8fl0ecnb65n" data-title="Python数据可视化" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -540,7 +540,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example/" data-id="clko13mcj000634flf9ab1xvd" data-title="Python数据可视化例题" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example/" data-id="clko1a7kl0006i8fl3voa71q3" data-title="Python数据可视化例题" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -581,7 +581,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example_code/" data-id="clko13mck000934flaqvfdi6k" data-title="Python数据可视化源码" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://z5882852.github.io/Blog/Big-Data-Competition/Python-Data-Visualization/example_code/" data-id="clko1a7km0008i8fld3njg9ic" data-title="Python数据可视化源码" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
